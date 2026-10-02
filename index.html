@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InnoveX — Think. Solve. Build. Lead.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+
+<style id="innovex-scroll-marquee-final">
+/* Marquee is deliberately in NORMAL document flow, AFTER the hero. */
+.innovex-scroll-marquee{
+  position:relative;
+  display:block;
+  width:100%;
+  height:82px;
+  overflow:hidden;
+  background:#000;
+  border-top:1px solid rgba(255,255,255,.12);
+  border-bottom:1px solid rgba(255,255,255,.12);
+  z-index:5;
+}
+.innovex-scroll-marquee-track{
+  display:flex;
+  width:max-content;
+  height:100%;
+  align-items:center;
+  animation:innovex-scroll-marquee 25s linear infinite;
+}
+.innovex-scroll-marquee-group{
+  height:100%;
+  display:flex;
+  align-items:center;
+  flex-shrink:0;
+  white-space:nowrap;
+}
+.innovex-scroll-marquee-group span{
+  color:#fff;
+  font-family:Inter,"Segoe UI",system-ui,sans-serif;
+  font-weight:800;
+  font-size:clamp(20px,2.1vw,30px);
+  letter-spacing:.08em;
+  padding:0 25px;
+}
+.innovex-scroll-marquee-group span.yellow{
+  color:#ffc400;
+}
+.innovex-scroll-marquee-group b{
+  color:#ffc400;
+  font-size:18px;
+  font-weight:500;
+}
+@keyframes innovex-scroll-marquee{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
+.innovex-scroll-marquee:hover .innovex-scroll-marquee-track{
+  animation-play-state:paused;
+}
+@media(max-width:700px){
+  .innovex-scroll-marquee{height:64px}
+  .innovex-scroll-marquee-group span{
+    font-size:16px;
+    padding:0 15px;
+  }
+  .innovex-scroll-marquee-group b{font-size:14px}
+}
+</style>
+
+
+<style id="innovex-hero-flow-fix">
+/* First page = exactly one viewport. Everything else follows it normally. */
+.hero{
+  min-height:100vh;
+  min-height:100dvh;
+  height:100vh;
+  height:100dvh;
+}
+@media(max-width:600px){
+  .hero{
+    min-height:100vh;
+    min-height:100dvh;
+    height:100vh;
+    height:100dvh;
+  }
+}
+</style>
+
+</head>
+<body>
+
+  <!-- ============================ HERO ============================ -->
+  <main class="hero" id="home">
+    <video class="hero-video" id="heroVideo" muted autoplay playsinline preload="auto">
+      <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260803_192301_9231ed6b-c55c-4a48-909c-4ebe11cf2e11.mp4">
+    </video>
+    <div class="hero-shade"></div>
+
+    <nav class="nav glass">
+      <a class="brand" href="#home">
+        <img src="assets/innoveX-logo.png" alt="InnoveX">
+      </a>
+
+      <div class="nav-links">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#challenges">Challenges</a>
+        <a href="#events">Events</a>
+        <a href="team.html">Team</a>
+        <a href="#events">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="nav-outline" href="#events">Explore</a>
+        <a class="nav-cta" href="#join">Join InnoveX</a>
+      </div>
+    </nav>
+
+    <section class="hero-content">
+      <div class="eyebrow"><span></span> STUDENT-LED • BUILDER-FOCUSED</div>
+      <h1>Think. Solve.<br><em>Build.</em> Lead.</h1>
+      <p>
+        InnoveX is a student-led innovation community where curious minds come together
+        to learn, experiment, solve meaningful problems and turn ideas into real projects.
+        From challenges and workshops to hackathons and project showcases, we create
+        opportunities to think boldly, build together and lead with purpose.
+      </p>
+
+      <!-- <div class="hero-form glass">
+        <input type="email" id="heroEmail" placeholder="Enter your email" aria-label="Email">
+        <button onclick="joinFromHero()" aria-label="Join InnoveX">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div> -->
+
+      <div class="hero-actions">
+        <a class="yellow-btn" href="#challenges">Explore Challenges <i class="fa-solid fa-arrow-down"></i></a>
+        <a class="glass text-btn" href="#about">Discover InnoveX</a>
+      </div>
+    </section>
+
+
+  </main>
+</div>
+
+  <!-- ============================ INNOVEX MARQUEE ============================ -->
+  <section class="innovex-scroll-marquee" aria-label="InnoveX highlights">
+    <div class="innovex-scroll-marquee-track">
+      <div class="innovex-scroll-marquee-group">
+        <span>THINK</span><b>✦</b>
+        <span>SOLVE</span><b>✦</b>
+        <span class="yellow">BUILD</span><b>✦</b>
+        <span>LEAD</span><b>✦</b>
+        <span class="yellow">INNOVEX</span><b>✦</b>
+        <span>HACKATHONS</span><b>✦</b>
+        <span class="yellow">INNOVATION</span><b>✦</b>
+        <span>COMMUNITY</span><b>✦</b>
+      </div>
+      <div class="innovex-scroll-marquee-group" aria-hidden="true">
+        <span>THINK</span><b>✦</b>
+        <span>SOLVE</span><b>✦</b>
+        <span class="yellow">BUILD</span><b>✦</b>
+        <span>LEAD</span><b>✦</b>
+        <span class="yellow">INNOVEX</span><b>✦</b>
+        <span>HACKATHONS</span><b>✦</b>
+        <span class="yellow">INNOVATION</span><b>✦</b>
+        <span>COMMUNITY</span><b>✦</b>
+      </div>
+    </div>
+  </section>
+<!-- ============================ ABOUT ============================ -->
+  <section class="section about" id="about">
+    <div class="section-inner">
+      <div class="section-label">ABOUT INNOVEX</div>
+      <h2>Pioneering <em>ideas</em> for<br class="desktop"> minds that <em>create, build,<br>and inspire.</em></h2>
+      <div class="about-grid">
+        <p class="lead-copy">
+          InnoveX is more than a student club — it is a space for people who want to explore,
+          create and grow together. We bring students together through hands-on learning,
+          problem-solving challenges, workshops, hackathons, project showcases and innovation
+          activities. Whether you are discovering your strengths, building your first project
+          or leading a team, InnoveX gives you a place to experiment, collaborate and contribute.
+        </p>
+        <div class="mini-points">
+          <div><strong>01</strong><span>Learn through hands-on challenges</span></div>
+          <div><strong>02</strong><span>Build projects with a community</span></div>
+          <div><strong>03</strong><span>Lead, collaborate and grow</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FEATURED ============================ -->
+  <section class="section featured">
+    <div class="section-inner wide">
+      <div class="section-top">
+        <div>
+          <div class="section-label">OUR APPROACH</div>
+          <h2 class="medium-heading">Curiosity becomes <em>creation.</em></h2>
+        </div>
+        <a class="glass text-btn" href="#challenges">Explore more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+
+      <div class="feature-video glass-frame">
+        <video muted autoplay loop playsinline preload="auto">
+          <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260402_054547_9875cfc5-155a-4229-8ec8-b7ba7125cbf8.mp4" type="video/mp4">
+        </video>
+        <div class="video-gradient"></div>
+        <div class="feature-card glass">
+          <div class="section-label">HOW WE WORK</div>
+          <p>Every InnoveX journey starts with curiosity. We learn through practice, experiment with ideas, collaborate across skills and turn ambitious thoughts into prototypes, projects and experiences that can make a difference.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ PHILOSOPHY ============================ -->
+  <section class="section philosophy">
+    <div class="section-inner wide">
+      <div class="section-label">THE INNOVEX MINDSET</div>
+      <h2>Innovation <em>x</em> Vision</h2>
+
+      <div class="philosophy-grid">
+        <div class="philosophy-video glass-frame">
+          <video muted autoplay loop playsinline preload="auto">
+            <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260307_083826_e938b29f-a43a-41ec-a153-3d4730578ab8.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="philosophy-copy">
+          <article>
+            <div class="section-label">CHOOSE YOUR SPACE</div>
+            <p>
+              Explore the different sides of problem-solving — aptitude, reasoning, technology,
+              innovation and entrepreneurship — and find the challenge that pushes you to grow.
+            </p>
+          </article>
+          <div class="divider"></div>
+          <article>
+            <div class="section-label">SHAPE THE FUTURE</div>
+            <p>
+              The best ideas grow when curious people work together. InnoveX connects students
+              through shared challenges, projects, events and opportunities to learn, contribute
+              and turn ideas into meaningful outcomes.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ CHALLENGES ============================ -->
+  <section class="section challenges" id="challenges">
+    <div class="section-inner wide">
+      <div class="section-top">
+        <div>
+          <div class="section-label">WHAT WE DO</div>
+          <h2 class="medium-heading">Choose your <em>challenge.</em></h2>
+        </div>
+        <div class="desktop-only section-label">OUR FOCUS</div>
+      </div>
+
+      <div class="challenge-grid">
+        <article class="challenge-card glass">
+          <div class="challenge-art yellow-art"><i class="fa-solid fa-brain"></i></div>
+          <div class="challenge-body">
+            <span class="tag">THINK</span>
+            <h3>Aptitude & Reasoning</h3>
+            <p>Sharpen problem-solving through puzzles, quizzes, aptitude practice and logical challenges.</p>
+            <a href="#events">Explore <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+
+        <article class="challenge-card glass">
+          <div class="challenge-art dark-art"><i class="fa-solid fa-code"></i></div>
+          <div class="challenge-body">
+            <span class="tag">BUILD</span>
+            <h3>Programming & Technology</h3>
+            <p>Learn by building projects across software, web, AI and emerging technologies.</p>
+            <a href="#events">Explore <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+
+        <article class="challenge-card glass">
+          <div class="challenge-art yellow-art"><i class="fa-solid fa-rocket"></i></div>
+          <div class="challenge-body">
+            <span class="tag">CREATE</span>
+            <h3>Innovation</h3>
+            <p>Turn ideas into prototypes and solutions for real-world problems.</p>
+            <a href="#events">Explore <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+
+        <article class="challenge-card glass">
+          <div class="challenge-art dark-art"><i class="fa-solid fa-people-group"></i></div>
+          <div class="challenge-body">
+            <span class="tag">LEAD</span>
+            <h3>Entrepreneurship & Teamwork</h3>
+            <p>Collaborate, communicate, lead teams and learn how ideas become ventures.</p>
+            <a href="#events">Explore <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ EVENTS ============================ -->
+  <section class="section events" id="events">
+    <div class="section-inner wide">
+      <div class="section-label">WHAT'S NEXT</div>
+      <h2>Something <em>exciting</em> is coming.</h2>
+      <div class="events-coming-soon">
+        <div class="coming-mark">✦</div>
+        <div>
+          <span class="tag">COMING SOON</span>
+          <h3>New InnoveX events will be announced soon.</h3>
+          <p>Workshops, challenges, hackathons and project showcases are on the way. Stay connected and be the first to know.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ JOIN ============================ -->
+  <section class="join-section" id="join">
+
+  <style>
+    /* =====================================================
+       INNOVEX JOIN FORM
+       NOTE: Background is NOT changed.
+       Your existing yellow .join-section background remains.
+       ===================================================== */
+
+
+    /* =====================================================
+       INNOVEX JOIN FORM — REFINED UI / UX
+       Keeps the existing yellow section background.
+       ===================================================== */
+
+    .join-inner {
+      width: min(820px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .join-header {
+      text-align: center;
+    }
+
+    .join-section .section-label {
+      margin-bottom: 18px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .2em;
+    }
+
+    .join-section h2 {
+      margin: 0;
+      font-size: clamp(44px, 7vw, 76px);
+      line-height: .98;
+      letter-spacing: -.045em;
+      font-weight: 500;
+    }
+
+    .join-section h2 em {
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .join-description {
+      max-width: 570px;
+      margin: 24px auto 0;
+      font-size: 15px;
+      line-height: 1.7;
+      opacity: .72;
+    }
+
+    /* FORM CARD */
+    .join-form {
+      width: 100%;
+      max-width: 720px;
+      margin: 42px auto 0;
+      padding: clamp(22px, 4vw, 34px);
+      box-sizing: border-box;
+      text-align: left;
+      background: rgba(255,255,255,.34);
+      border: 1px solid rgba(0,0,0,.12);
+      border-radius: 18px;
+      box-shadow: 0 18px 50px rgba(0,0,0,.10);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    /* PROGRESS */
+    .join-progress {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 30px;
+    }
+
+    .join-progress-step {
+      position: relative;
+      height: 4px;
+      border-radius: 99px;
+      background: rgba(0,0,0,.13);
+      overflow: hidden;
+    }
+
+    .join-progress-step::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      transform: scaleX(0);
+      transform-origin: left;
+      background: #111;
+      transition: transform .35s ease;
+    }
+
+    .join-progress-step.active::after,
+    .join-progress-step.complete::after {
+      transform: scaleX(1);
+    }
+
+    .join-progress-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 9px;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      opacity: .48;
+    }
+
+    .join-step {
+      display: none;
+    }
+
+    .join-step.active {
+      display: block;
+      animation: joinFadeIn .35s ease both;
+    }
+
+    @keyframes joinFadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .join-field-label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .18em;
+      opacity: .62;
+    }
+
+    /* EMAIL */
+    .join-email-row {
+      display: grid;
+      grid-template-columns: minmax(0,1fr) auto;
+      gap: 10px;
+      align-items: stretch;
+    }
+
+    .join-email-input,
+    .join-custom {
+      box-sizing: border-box;
+      width: 100%;
+      background: rgba(255,255,255,.94) !important;
+      border: 1.5px solid rgba(0,0,0,.16) !important;
+      color: #111 !important;
+      outline: none;
+      font-family: inherit;
+      transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+    }
+
+    .join-email-input {
+      min-width: 0;
+      height: 56px;
+      padding: 0 17px;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    .join-email-input::placeholder,
+    .join-custom::placeholder {
+      color: #555 !important;
+      opacity: 1;
+    }
+
+    .join-email-input:focus,
+    .join-custom:focus {
+      background: #fff !important;
+      border-color: #111 !important;
+      box-shadow: 0 0 0 4px rgba(0,0,0,.07);
+    }
+
+    .join-continue,
+    .join-submit {
+      height: 56px;
+      padding: 0 21px;
+      background: #111 !important;
+      color: #fff !important;
+      border: 1.5px solid #111;
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+      white-space: nowrap;
+    }
+
+    .join-continue:hover,
+    .join-submit:hover {
+      background: #292929 !important;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    }
+
+    .join-continue:active,
+    .join-submit:active {
+      transform: translateY(0);
+    }
+
+    .join-continue i,
+    .join-submit i {
+      margin-left: 8px;
+    }
+
+    /* SECOND STEP */
+    .join-question-heading {
+      margin: 0 0 7px;
+      font-size: clamp(24px, 4vw, 30px);
+      line-height: 1.2;
+      font-weight: 650;
+      letter-spacing: -.025em;
+    }
+
+    .join-question-text {
+      margin: 0 0 20px;
+      font-size: 13px;
+      line-height: 1.6;
+      opacity: .65;
+    }
+
+    /* OPTIONS */
+    .join-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .join-option {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      min-height: 76px;
+      box-sizing: border-box;
+      padding: 13px;
+      background: rgba(255,255,255,.82) !important;
+      border: 1.5px solid rgba(0,0,0,.13) !important;
+      border-radius: 11px;
+      color: #111 !important;
+      text-align: left;
+      font-family: inherit;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0,0,0,.045);
+      transition: border-color .2s ease, background .2s ease, transform .2s ease, box-shadow .2s ease;
+    }
+
+    .join-option:hover {
+      background: #fff !important;
+      border-color: rgba(0,0,0,.35) !important;
+      transform: translateY(-2px);
+      box-shadow: 0 9px 22px rgba(0,0,0,.09);
+    }
+
+    .join-option.selected {
+      background: #111 !important;
+      border-color: #111 !important;
+      color: #fff !important;
+      box-shadow: 0 9px 24px rgba(0,0,0,.18);
+    }
+
+    .join-option-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      flex: 0 0 40px;
+      margin-right: 12px;
+      background: #ededed;
+      border-radius: 9px;
+      color: #111;
+      font-size: 13px;
+      transition: background .2s ease, color .2s ease;
+    }
+
+    .join-option.selected .join-option-icon {
+      background: #fff;
+      color: #111;
+    }
+
+    .join-option-content {
+      min-width: 0;
+    }
+
+    .join-option-content strong {
+      display: block;
+      margin-bottom: 4px;
+      color: inherit;
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    .join-option-content small {
+      display: block;
+      color: inherit;
+      font-size: 10px;
+      line-height: 1.4;
+      opacity: .58;
+    }
+
+    .join-option-check {
+      position: absolute;
+      top: 9px;
+      right: 9px;
+      width: 20px;
+      height: 20px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: rgba(255,255,255,.12);
+      color: #fff;
+      font-size: 9px;
+      opacity: 0;
+      transform: scale(.7);
+      transition: opacity .2s ease, transform .2s ease;
+    }
+
+    .join-option.selected .join-option-check {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* CUSTOM RESPONSE */
+    .join-custom-wrapper {
+      margin-top: 14px;
+    }
+
+    .join-custom {
+      display: block;
+      min-height: 96px;
+      padding: 14px 16px;
+      border-radius: 10px;
+      resize: vertical;
+      font-size: 13px;
+      line-height: 1.6;
+      box-shadow: 0 4px 14px rgba(0,0,0,.045);
+    }
+
+    .join-custom-hint {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 7px;
+      font-size: 9px;
+      line-height: 1.4;
+      opacity: .45;
+    }
+
+    /* ACTIONS */
+    .join-action-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 20px;
+      padding-top: 17px;
+      border-top: 1px solid rgba(0,0,0,.10);
+    }
+
+    .join-back {
+      padding: 10px 0;
+      background: transparent !important;
+      border: 0;
+      color: #111 !important;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      opacity: .55;
+      cursor: pointer;
+      transition: opacity .2s ease, transform .2s ease;
+    }
+
+    .join-back:hover {
+      opacity: 1;
+      transform: translateX(-2px);
+    }
+
+    .join-back i {
+      margin-right: 6px;
+    }
+
+    .join-submit {
+      min-width: 145px;
+    }
+
+    .join-message {
+      display: block;
+      max-width: 620px;
+      margin: 13px auto 0;
+      text-align: center;
+      font-size: 10px;
+      line-height: 1.5;
+      opacity: .55;
+    }
+
+    /* VALIDATION FEEDBACK */
+    .join-email-input.invalid {
+      border-color: #a40000 !important;
+      box-shadow: 0 0 0 4px rgba(164,0,0,.07);
+    }
+
+    @media (max-width: 600px) {
+      .join-inner {
+        width: min(100% - 28px, 820px);
+      }
+
+      .join-form {
+        margin-top: 34px;
+        padding: 20px 16px;
+        border-radius: 15px;
+      }
+
+      .join-email-row {
+        grid-template-columns: 1fr;
+      }
+
+      .join-email-input,
+      .join-continue {
+        width: 100%;
+        height: 54px;
+      }
+
+      .join-options {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .join-option {
+        min-height: 66px;
+      }
+
+      .join-action-row {
+        align-items: stretch;
+      }
+
+      .join-submit {
+        flex: 1;
+        min-width: 0;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .join-section h2 {
+        font-size: 40px;
+      }
+
+      .join-option-icon {
+        width: 36px;
+        height: 36px;
+        flex-basis: 36px;
+        margin-right: 10px;
+      }
+
+      .join-action-row {
+        gap: 10px;
+      }
+    }
+
+    /* =====================================================
+       PREMIUM JOIN EXPERIENCE
+       ===================================================== */
+
+    .join-section {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .join-section::before {
+      content: "INNOVEX";
+      position: absolute;
+      left: -4vw;
+      bottom: -4vw;
+      z-index: -1;
+      font-size: clamp(120px, 20vw, 280px);
+      line-height: .8;
+      font-weight: 900;
+      letter-spacing: -.08em;
+      color: rgba(0,0,0,.045);
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .join-section::after {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      right: -210px;
+      top: 18%;
+      border-radius: 50%;
+      background: rgba(255,255,255,.28);
+      filter: blur(4px);
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .join-header {
+      position: relative;
+    }
+
+    .join-header::after {
+      content: "✦";
+      display: block;
+      width: 34px;
+      height: 34px;
+      margin: 22px auto 0;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(0,0,0,.18);
+      border-radius: 50%;
+      font-size: 13px;
+      background: rgba(255,255,255,.22);
+      animation: joinPulse 2.8s ease-in-out infinite;
+    }
+
+    @keyframes joinPulse {
+      0%,100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0,0,0,0); }
+      50% { transform: scale(1.08); box-shadow: 0 0 0 7px rgba(0,0,0,.035); }
+    }
+
+    .join-form {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,.16);
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.52), rgba(255,255,255,.24));
+      box-shadow:
+        0 25px 70px rgba(0,0,0,.13),
+        inset 0 1px 0 rgba(255,255,255,.65);
+    }
+
+    .join-form::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, #111 0%, #111 50%, rgba(17,17,17,.08) 50%);
+      opacity: .9;
+    }
+
+    .join-form::after {
+      content: "JOIN THE BUILD";
+      position: absolute;
+      right: 25px;
+      top: 21px;
+      font-size: 8px;
+      font-weight: 900;
+      letter-spacing: .18em;
+      opacity: .32;
+    }
+
+    .join-progress {
+      margin-top: 5px;
+    }
+
+    .join-progress-step {
+      height: 5px;
+      background: rgba(0,0,0,.10);
+    }
+
+    .join-progress-step::after {
+      background: #111;
+    }
+
+    .join-progress-labels span:first-child {
+      opacity: .9;
+    }
+
+    .join-step.active .join-question-heading {
+      position: relative;
+    }
+
+    .join-question-heading::after {
+      content: "";
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      margin: 0 0 5px 8px;
+      border-radius: 50%;
+      background: #111;
+      animation: joinDot 1.7s ease-in-out infinite;
+    }
+
+    @keyframes joinDot {
+      0%,100% { opacity: .35; transform: scale(.8); }
+      50% { opacity: 1; transform: scale(1); }
+    }
+
+    .join-option {
+      overflow: hidden;
+    }
+
+    .join-option::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: #111;
+      transform: scaleY(0);
+      transform-origin: bottom;
+      transition: transform .25s ease;
+    }
+
+    .join-option:hover::before,
+    .join-option.selected::before {
+      transform: scaleY(1);
+    }
+
+    .join-option.selected {
+      background:
+        linear-gradient(135deg, #111 0%, #191919 100%) !important;
+    }
+
+    .join-option.selected .join-option-content strong {
+      letter-spacing: .01em;
+    }
+
+    .join-custom-wrapper {
+      position: relative;
+    }
+
+    .join-custom {
+      min-height: 105px;
+    }
+
+    .join-custom:focus {
+      transform: translateY(-1px);
+    }
+
+    .join-action-row {
+      position: relative;
+    }
+
+    .join-submit {
+      position: relative;
+      overflow: hidden;
+      min-width: 158px;
+      background: #111 !important;
+      box-shadow: 0 8px 20px rgba(0,0,0,.14);
+    }
+
+    .join-submit::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -80%;
+      width: 55%;
+      height: 100%;
+      transform: skewX(-20deg);
+      background: rgba(255,255,255,.16);
+      transition: left .55s ease;
+    }
+
+    .join-submit:hover::before {
+      left: 125%;
+    }
+
+    .join-submit i {
+      transition: transform .25s ease;
+    }
+
+    .join-submit:hover i {
+      transform: translateX(4px);
+    }
+
+    .join-back i {
+      transition: transform .2s ease;
+    }
+
+    .join-back:hover i {
+      transform: translateX(-3px);
+    }
+
+    .join-message {
+      opacity: .62;
+    }
+
+    /* Make the first-step CTA feel intentional */
+    .join-continue {
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,.12);
+    }
+
+    .join-continue::before {
+      content: "→";
+      position: absolute;
+      right: 15px;
+      opacity: 0;
+      transform: translateX(-5px);
+      transition: .2s ease;
+    }
+
+    .join-continue:hover::before {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .join-continue i {
+      transition: opacity .2s ease;
+    }
+
+    .join-continue:hover i {
+      opacity: 0;
+    }
+
+    @media (max-width: 600px) {
+      .join-form::after {
+        display: none;
+      }
+
+      .join-section::before {
+        font-size: 110px;
+        bottom: -8px;
+      }
+
+      .join-header::after {
+        margin-top: 18px;
+      }
+    }
+
+  </style>
+
+
+  <!-- =====================================================
+       HEADER
+       ===================================================== -->
+
+  <div class="join-inner">
+
+    <div class="join-header">
+
+      <div class="section-label">
+        JOIN INNOVEX
+      </div>
+
+      <h2>
+        Ready to make<br>
+        <em>something real?</em>
+      </h2>
+
+      <p class="join-description">
+        Bring your curiosity, your ideas and your willingness to build.
+        We'll bring the community, challenges and opportunities to help you grow.
+      </p>
+
+    </div>
+
+
+    <!-- ===================================================
+         FORM
+         KEEP YOUR WORKING FORMSPREE URL
+         =================================================== -->
+
+    <form
+      class="join-form"
+      id="joinForm"
+      action="https://formspree.io/f/mwlpyyyv"
+      method="POST"
+    >
+
+      <!-- PROGRESS -->
+      <div class="join-progress" aria-label="Join form progress">
+        <div class="join-progress-step active" id="joinProgressEmail"></div>
+        <div class="join-progress-step" id="joinProgressReason"></div>
+      </div>
+      <!-- <div class="join-progress-labels" aria-hidden="true">
+        <span>01 · EMAIL</span>
+        <span>02 · ABOUT YOU</span>
+      </div> -->
+
+      <!-- ================================================
+           STEP 1 — EMAIL
+           ================================================ -->
+
+      <div
+        class="join-step active"
+        id="joinStepEmail"
+      >
+
+        <label
+          class="join-field-label"
+          for="joinEmail"
+        >
+          YOUR EMAIL
+        </label>
+
+        <div class="join-email-row">
+
+          <input
+            type="email"
+            id="joinEmail"
+            name="email"
+            class="join-email-input"
+            placeholder="Enter your email"
+            autocomplete="email"
+            required
+          >
+
+          <button
+            type="button"
+            class="join-continue"
+            id="joinContinue"
+          >
+            Continue
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================================================
+           STEP 2 — WHY JOIN?
+           ================================================ -->
+
+      <div
+        class="join-step"
+        id="joinStepReason"
+      >
+
+        <span class="join-field-label">
+          WHY INNOVEX?
+        </span>
+
+        <h3 class="join-question-heading">
+          What brings you here?
+        </h3>
+
+        <p class="join-question-text">
+          Pick what interests you, or tell us in your own words.
+        </p>
+
+
+        <!-- OPTIONS -->
+
+        <div class="join-options">
+
+
+          <button
+            type="button"
+            class="join-option"
+            aria-pressed="false"
+            data-reason="Learn new skills"
+          >
+
+            <span class="join-option-icon">
+              <i class="fa-solid fa-lightbulb"></i>
+            </span>
+
+            <span class="join-option-content">
+              <strong>Learn</strong>
+              <small>Explore new skills & ideas</small>
+            </span>
+
+          <span class="join-option-check"><i class="fa-solid fa-check"></i></span>
+
+          </button>
+
+
+          <button
+            type="button"
+            class="join-option"
+            aria-pressed="false"
+            data-reason="Build projects"
+          >
+
+            <span class="join-option-icon">
+              <i class="fa-solid fa-code"></i>
+            </span>
+
+            <span class="join-option-content">
+              <strong>Build</strong>
+              <small>Turn ideas into real projects</small>
+            </span>
+
+          <span class="join-option-check"><i class="fa-solid fa-check"></i></span>
+
+          </button>
+
+
+          <button
+            type="button"
+            class="join-option"
+            aria-pressed="false"
+            data-reason="Meet like-minded people"
+          >
+
+            <span class="join-option-icon">
+              <i class="fa-solid fa-users"></i>
+            </span>
+
+            <span class="join-option-content">
+              <strong>Connect</strong>
+              <small>Meet curious people & creators</small>
+            </span>
+
+          <span class="join-option-check"><i class="fa-solid fa-check"></i></span>
+
+          </button>
+
+
+          <button
+            type="button"
+            class="join-option"
+            aria-pressed="false"
+            data-reason="Participate in events"
+          >
+
+            <span class="join-option-icon">
+              <i class="fa-solid fa-bolt"></i>
+            </span>
+
+            <span class="join-option-content">
+              <strong>Experience</strong>
+              <small>Join events & challenges</small>
+            </span>
+
+          <span class="join-option-check"><i class="fa-solid fa-check"></i></span>
+
+          </button>
+
+        </div>
+
+
+        <!-- CUSTOM RESPONSE -->
+
+        <div class="join-custom-wrapper">
+
+          <textarea
+            id="joinReason"
+            name="custom_reason"
+            class="join-custom"
+            placeholder="Or tell us in your own words..."
+            rows="3"
+          ></textarea>
+
+        </div>
+
+
+        <!-- HIDDEN SELECTED REASON -->
+
+        <input
+          type="hidden"
+          name="reason"
+          id="joinSelectedReason"
+        >
+
+
+        <!-- EMAIL SUBJECT -->
+
+        <input
+          type="hidden"
+          name="_subject"
+          value="New InnoveX Join Request"
+        >
+
+
+        <!-- ACTIONS -->
+
+        <div class="join-action-row">
+
+          <button
+            type="button"
+            class="join-back"
+            id="joinBack"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+            Back
+          </button>
+
+
+          <button
+            type="submit"
+            class="join-submit"
+          >
+            Join InnoveX
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+
+        </div>
+
+      </div>
+
+    </form>
+
+
+    <!-- MESSAGE -->
+
+    <small
+      class="join-message"
+      id="joinMessage"
+    >
+      No spam. Just opportunities to learn, build and grow.
+    </small>
+
+  </div>
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+       ===================================================== -->
+
+  <script>
+
+    const joinForm =
+      document.getElementById("joinForm");
+
+    const joinStepEmail =
+      document.getElementById("joinStepEmail");
+
+    const joinStepReason =
+      document.getElementById("joinStepReason");
+
+    const joinEmail =
+      document.getElementById("joinEmail");
+
+    const joinContinue =
+      document.getElementById("joinContinue");
+
+    const joinBack =
+      document.getElementById("joinBack");
+
+    const joinReason =
+      document.getElementById("joinReason");
+
+    const joinSelectedReason =
+      document.getElementById("joinSelectedReason");
+
+    const joinMessage =
+      document.getElementById("joinMessage");
+
+
+    let selectedReason = "";
+
+
+    /* ================================================
+       EMAIL → SECOND STEP
+       ================================================ */
+
+    joinContinue.addEventListener(
+      "click",
+      function () {
+
+        if (!joinEmail.checkValidity()) {
+
+          joinEmail.reportValidity();
+
+          return;
+
+        }
+
+        joinStepEmail.classList.remove("active");
+
+        joinStepReason.classList.add("active");
+
+        joinMessage.textContent =
+          "Almost there. Tell us what you want to explore with InnoveX.";
+
+      }
+    );
+
+
+    /* ================================================
+       BACK
+       ================================================ */
+
+    joinBack.addEventListener(
+      "click",
+      function () {
+
+        joinStepReason.classList.remove("active");
+
+        joinStepEmail.classList.add("active");
+        joinProgressReason.classList.remove("active");
+        joinProgressEmail.classList.remove("complete");
+
+        joinMessage.textContent =
+          "No spam. Just opportunities to learn, build and grow.";
+
+      }
+    );
+
+
+    /* ================================================
+       REASON SELECTION
+       ================================================ */
+
+    document
+      .querySelectorAll(".join-option")
+      .forEach(function (option) {
+
+        option.addEventListener(
+          "click",
+          function () {
+
+            document
+              .querySelectorAll(".join-option")
+              .forEach(function (item) {
+
+                item.classList.remove("selected");
+              
+
+              });
+
+
+            option.classList.add("selected");
+            document
+              .querySelectorAll(".join-option")
+              .forEach(function (item) {
+                item.setAttribute("aria-pressed", item === option ? "true" : "false");
+              });
+
+
+            selectedReason =
+              option.getAttribute("data-reason");
+
+
+            joinSelectedReason.value =
+              selectedReason;
+
+
+            /* Clear custom answer */
+
+            joinReason.value = "";
+
+          }
+        );
+
+      });
+
+
+    /* ================================================
+       CUSTOM ANSWER
+       ================================================ */
+
+    joinReason.addEventListener(
+      "input",
+      function () {
+
+        if (joinReason.value.trim() !== "") {
+
+          selectedReason = "";
+
+          joinSelectedReason.value = "";
+
+          document
+            .querySelectorAll(".join-option")
+            .forEach(function (option) {
+
+              option.classList.remove("selected");
+
+            });
+
+        }
+
+      }
+    );
+
+
+    /* ================================================
+       SUBMIT
+       ================================================ */
+
+    joinForm.addEventListener(
+      "submit",
+      function (event) {
+
+        const customReason =
+          joinReason.value.trim();
+
+        const finalReason =
+          customReason || selectedReason;
+
+
+        if (!finalReason) {
+
+          event.preventDefault();
+
+          joinMessage.textContent =
+            "Please choose an option or tell us why you want to join.";
+
+          joinReason.focus();
+
+          return;
+
+        }
+
+
+        if (customReason) {
+
+          joinSelectedReason.value =
+            customReason;
+
+        }
+
+      }
+    );
+
+  </script>
+
+</section>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+  <div class="footer-boundary"></div>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-brand-visual">
+        <div class="footer-logo-wrap">
+          <img src="assets/innoveX-logo.png" alt="InnoveX">
+        </div>
+        <div class="footer-brand-divider"></div>
+        <div class="footer-brand-copy">
+          <p>A student-led innovation community for learning, problem-solving, collaboration, creativity and building ideas into impact.</p>
+
+          <div class="footer-socials" aria-label="InnoveX social links">
+            <a class="footer-social instagram" href="https://www.instagram.com/innovex_cmrit?igsh=dGthbTlsbXZnNDVs" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="footer-social linkedin" href="https://www.linkedin.com/in/innovex-spaces/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a class="footer-social email" href="mailto:innovexcommunity@gmail.com" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h4>Explore</h4>
+      <a href="index.html#about">About Us</a>
+      <a href="index.html#challenges">Challenges</a>
+      <a href="index.html#events">Events</a>
+      <a href="index.html#events">Gallery</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Community</h4>
+      <a href="team.html">Our Team</a>
+      <a href="contact.html">Contact</a>
+      <a href="index.html#join">Join InnoveX</a>
+    </div>
+
+    <div class="footer-column footer-focus">
+      <h4>Our Focus</h4>
+      <p>Think. Solve. Build. Lead.</p>
+      <p>Aptitude, Reasoning, Technology, Innovation, Entrepreneurship, Workshops, Hackathons, Projects and Teamwork.</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 InnoveX</span>
+    <span>Built together. Created to make an impact.</span>
+  </div>
+</footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+<style>
+.events-coming-soon{display:flex;gap:22px;align-items:center;padding:30px 0;border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12)}
+.coming-mark{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#c9f36b;color:#080808;font-size:22px;flex:0 0 auto}
+.events-coming-soon h3{margin:8px 0 7px;font-size:clamp(20px,2.5vw,30px)}
+.events-coming-soon p{margin:0;color:rgba(255,255,255,.5);max-width:650px;line-height:1.6}
+@media(max-width:600px){.events-coming-soon{align-items:flex-start}.coming-mark{width:46px;height:46px}}
+</style>
