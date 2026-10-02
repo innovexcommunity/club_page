@@ -152,7 +152,7 @@ INNOVEX operates through a structured leadership and functional-team system cove
 | Vice President         | Harish                  |
 | Secretary General      | Nandhini                |
 | Steering Committee     | EvolveX Members         |
-| Technical Lead         | D Sathvik               |
+| Technical Lead         | D Sathwik               |
 | Digital Marketing Lead | Krithika & Vasavi       |
 | Graphic Designer Lead  | Nidhi Shukla & Navyaa   |
 | Content Lead           | Vaijayanti & Meghana    |
@@ -164,7 +164,7 @@ INNOVEX operates through a structured leadership and functional-team system cove
 | Outreach Lead          | Charan & Bhavana        |
 | Documentation Lead     | Asrith & Akrusha        |
 | Volunteer Team         | Sneha & Vishwa          |
-| Web Designer Lead      | Nandhini & D Sathvik    |
+| Web Designer Lead      | Nandhini & D Sathwik    |
 
 ---
 
